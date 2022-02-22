@@ -1,5 +1,3 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 import firebase from 'firebase/compat/app';
 
 // Your web app's Firebase configuration
@@ -14,6 +12,3 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig); 
-// const app = initializeApp(firebaseConfig);
-// export const authentication = getAuth(app); 
-// export default firebaseConfig
