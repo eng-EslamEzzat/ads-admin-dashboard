@@ -1,1 +1,4 @@
 export const SETISSIGNIN = "SETISSIGNIN";
+export const ADDMODEL = "ADDMODEL";
+export const REMOVESMODEL = "REMOVESMODEL";
+export const UPDATEMODEL = "UPDATEMODEL";

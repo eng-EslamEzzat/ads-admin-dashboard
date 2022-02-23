@@ -37,12 +37,13 @@ const NavBarComponent = () => {
                         <>
                             <Button  variant="light" size="lg" 
                                 onClick={()=>navigate('/')}>Home</Button>
+                            {/* <Button  variant="light" size="lg" 
+                                onClick={()=>navigate('/')}>Ads Models</Button> */}
                             <Button  variant="light" size="lg" 
-                                onClick={()=>navigate('/')}>Ads Models</Button>
+                                onClick={()=>navigate('/models')}>Showing List</Button>
                             <Button  variant="light" size="lg" 
-                                onClick={()=>navigate('/')}>Showing List</Button>
-                            <Button  variant="light" size="lg" 
-                                onClick={()=>navigate('/')}>Create New</Button>
+                                onClick={()=>navigate('/create')}>Create New</Button>
+                            <br/><br/>
                             <Button  variant="danger" size="lg" 
                                 onClick={()=> firebase.auth().signOut()}>Sign Out</Button>
                         </>:
