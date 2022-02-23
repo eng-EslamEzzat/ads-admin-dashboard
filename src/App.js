@@ -61,7 +61,9 @@ function App() {
       <Routes>
         <Route path="/" element={isSignedIn?<AdsModels/>:<Navigate to="/login"/>} />
         <Route path="/models" element={<ListModels/>} />
-        <Route path="/create" element={<CreateModel/>} />
+        <Route path="/create" element={<CreateModel/>} >
+          <Route path=":id" element={<CreateModel/>} />
+        </Route>
         <Route path="/login" 
           element={!isSignedIn?<Login/>:<Navigate to="/"/>} 
         />

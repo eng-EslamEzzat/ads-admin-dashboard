@@ -6,16 +6,18 @@ import {
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import { removeModel } from '../../redux/actions';
+import { useNavigate } from 'react-router-dom';
 
 const AdsModels = () => {
   const {adsModels} = useSelector(state => state);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const deleteHandler = (model) =>{
     removeModel(dispatch, model)
   }
-  const updateHandler = () =>{
-
+  const updateHandler = (id) =>{
+    navigate(`/create/${id}`)
   }
   return (
     <>
@@ -37,7 +39,7 @@ const AdsModels = () => {
                     To: {model.to_time}
                 </Card.Text>
 
-                <Button variant="warning" onClick={updateHandler}>Update</Button>{' '}
+                <Button variant="warning" onClick={()=>updateHandler(model.id)}>Update</Button>{' '}
                 <Button variant="danger" onClick={()=>deleteHandler(model)}>Delete</Button>
                 </Card.Body>
             </Card>
