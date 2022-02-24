@@ -10,6 +10,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* provider for using redux */}
     <Provider store={store}>
       <App />
     </Provider>

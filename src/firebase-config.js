@@ -1,6 +1,6 @@
 import firebase from 'firebase/compat/app';
 
-// Your web app's Firebase configuration
+// this is the app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDAXmayfrdZ468n5N0VsavW4TULj14y_Fs",
   authDomain: "auth-admin-dashboard.firebaseapp.com",

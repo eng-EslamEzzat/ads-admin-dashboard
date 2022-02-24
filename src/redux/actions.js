@@ -1,5 +1,6 @@
 import {ADDMODEL, REMOVESMODEL, SETISSIGNIN, UPDATEMODEL} from "./types"
 
+// use dispatch in actions to easily use it in components
 export const setIsSignedIn = (dispatch, flag) => dispatch(
     {
         type: SETISSIGNIN,
